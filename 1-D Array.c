@@ -302,9 +302,9 @@
 
 //                 for (l = 0; l < no; l++) {
                     
-//                     if (nocn > 0) {
-//                         l = l;
-//                     }
+//                     // if (nocn > 0) {
+//                     //     l = l - nocn;
+//                     // }
                     
 //                     if (arr[l] == entry) {
                         
