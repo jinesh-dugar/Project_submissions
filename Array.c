@@ -385,3 +385,51 @@
 
 //         return 0;
 //     }
+
+
+
+/*Sorting of elements in 1-D Array according to ascending order (Different entries only)*/   /*Dated 25th June, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+
+//         int r;
+
+//         printf("Enter number of elements you want in the array :- ");
+//         scanf("%d", &r);
+
+//         int arr[r];
+
+//         printf("\n");
+
+//         for (int l = 0; l < r; l++) {
+//             printf("Enter value of arr[%d] :- ", l);
+//             scanf("%d", &arr[l]);
+//         }
+
+//         for (int x = 0; x < r; x++) {
+
+//             for (int l = 0; l < r; l++) {
+
+//                 if (arr[l] > arr[l + 1]) {
+
+//                     arr[l] = arr[l] + arr [l + 1];
+//                     arr[l + 1] = arr[l] - arr[l + 1];
+//                     arr[l] = arr[l] - arr[l + 1];
+//                 }
+                
+//             }
+
+//         }
+
+//         printf("\nThe array has been sorted in ascending order.\n\nHere's what it looks like :- ");
+
+//         for (int l = 0; l < r; l++) {
+//             printf("%d ", arr[l]);
+//         }
+
+//         return 0;
+//     }
