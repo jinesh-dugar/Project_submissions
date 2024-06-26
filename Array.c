@@ -436,6 +436,65 @@
 
 
 
+/*Selection sort -- Sorting of elements in 1-D Array according to ascending order (Different entries only)*/   /*Dated 26th June, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+
+//         int r;
+
+//         printf("Enter number of elements you want in the array :- ");
+//         scanf("%d", &r);
+
+//         int arr[r];
+
+//         printf("\n");
+
+//         for (int l = 0; l < r; l++) {
+//             printf("Enter value of arr[%d] :- ", l);
+//             scanf("%d", &arr[l]);
+//         }
+
+//         for (int l = 0; l < r; l++) {
+
+//             int small, smallest = arr[l];
+
+//             for (int l1 = (l + 1); l1 < r; l1++) {
+
+//                 small = 0;
+
+//                 if (arr[l1] < smallest) {
+//                     small = 1;
+//                     smallest = arr[l1];
+//                 }
+
+//                 if (small == 1) {
+
+//                     arr[l] = arr[l1] + arr[l];
+//                     arr[l1] = arr [l] - arr [l1];
+//                     arr[l] = arr [l] - arr [l1];
+
+//                 }
+//             }
+
+
+//         }
+
+//          printf("\nThe array has been sorted in ascending order.\n\nHere's what it looks like :- ");
+
+//         for (int l = 0; l < r; l++) {
+//             printf("%d ", arr[l]);
+//         }
+
+//         return 0;
+
+//     }
+
+
+
 /*Write a C program that prompts the user to input a series of numbers until they input a duplicate number and find the sum of all the entered numbers until the duplicate number is entered.
   Use a while loop to check for duplicates.*/   /*Dated 26th June, 2024*/ 
 
