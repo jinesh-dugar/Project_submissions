@@ -483,13 +483,57 @@
 
 //         }
 
-//          printf("\nThe array has been sorted in ascending order.\n\nHere's what it looks like :- ");
+//         printf("\nThe array has been sorted in ascending order.\n\nHere's what it looks like :- ");
 
 //         for (int l = 0; l < r; l++) {
 //             printf("%d ", arr[l]);
 //         }
 
 //         return 0;
+
+//     }
+
+
+
+/*Insertion sort -- Sorting of elements in 1-D Array according to ascending order*/   /*Dated 26th June, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+
+//         int r;
+
+//         printf("Enter number of elements you want in the array :- ");
+//         scanf("%d", &r);
+
+//         int arr[r];
+
+//         printf("\n");
+
+//         for (int l = 0; l < r; l++) {
+//             printf("Enter value of arr[%d] :- ", l);
+//             scanf("%d", &arr[l]);
+//         }
+
+//         for (int l = 1; l < r; l++) {
+//             for (int l1 = 0; l1 < l; l1++) {
+//                 if (arr[l] < arr[l1]) {
+//                     arr[l] = arr[l1] + arr[l];
+//                     arr[l1] = arr [l] - arr [l1];
+//                     arr[l] = arr [l] - arr [l1];
+//                 }
+//             }
+//         }
+
+//         printf("\nThe array has been sorted in ascending order.\n\nHere's what it looks like :- ");
+
+//         for (int l = 0; l < r; l++) {
+//             printf("%d ", arr[l]);
+//         }
+
+//     return 0;
 
 //     }
 
