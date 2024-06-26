@@ -388,7 +388,7 @@
 
 
 
-/*Sorting of elements in 1-D Array according to ascending order (Different entries only)*/   /*Dated 25th June, 2024*/
+/*Bubble sort -- Sorting of elements in 1-D Array according to ascending order (Different entries only)*/   /*Dated 25th June, 2024*/
 
 
 
