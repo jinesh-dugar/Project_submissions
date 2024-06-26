@@ -443,41 +443,41 @@
 
 
 
-#include<stdio.h>
+// #include<stdio.h>
 
-    int main () {
-        int arr[1000], dup = 0, index = 0;
+//     int main () {
+//         int arr[1000], dup = 0, index = 0;
         
-        for (int l = 0; l < 1000; l++) {
-            printf("Enter a number :- ");
-            /*int int_check = */scanf("%d", &arr[l]);
+//         for (int l = 0; l < 1000; l++) {
+//             printf("Enter a number :- ");
+//             /*int int_check = */scanf("%d", &arr[l]);
 
-            // while (int_check != 1) {
-            //     printf("Invalid Integer entered! Please enter a valid integer :- ");
-            //     continue;
-            // }
+//             // while (int_check != 1) {
+//             //     printf("Invalid Integer entered! Please enter a valid integer :- ");
+//             //     continue;
+//             // }
 
-            for (int l1 = 0; l1 < l; l1++) {
-                if (arr[l1] == arr[l]) {
-                    dup = 1;
-                }
-            }
+//             for (int l1 = 0; l1 < l; l1++) {
+//                 if (arr[l1] == arr[l]) {
+//                     dup = 1;
+//                 }
+//             }
 
-            if (dup == 1) {
-                printf("\n%d is a duplicate entry ! \nProgram stopped", arr[l]);
-                break;
-            }
+//             if (dup == 1) {
+//                 printf("\n%d is a duplicate entry ! \nProgram stopped", arr[l]);
+//                 break;
+//             }
 
-            index++;
-        }
+//             index++;
+//         }
 
-        int sum = 0;
+//         int sum = 0;
 
-        for (int l = 0; l < index; l++) {
-            sum = sum + arr[l];
-        }
+//         for (int l = 0; l < index; l++) {
+//             sum = sum + arr[l];
+//         }
 
-        printf("\n\nSum of all unique entries/integers = %d", sum);
+//         printf("\n\nSum of all unique entries/integers = %d", sum);
 
-        return 0;
-    }
+//         return 0;
+//     }
