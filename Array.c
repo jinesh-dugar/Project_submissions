@@ -433,3 +433,51 @@
 
 //         return 0;
 //     }
+
+
+
+/*Write a C program that prompts the user to input a series of numbers until they input a duplicate number and find the sum of all the entered numbers until the duplicate number is entered.
+  Use a while loop to check for duplicates.*/   /*Dated 26th June, 2024*/ 
+
+/*Checking whether entered entry is integer or not is not working*/
+
+
+
+#include<stdio.h>
+
+    int main () {
+        int arr[1000], dup = 0, index = 0;
+        
+        for (int l = 0; l < 1000; l++) {
+            printf("Enter a number :- ");
+            /*int int_check = */scanf("%d", &arr[l]);
+
+            // while (int_check != 1) {
+            //     printf("Invalid Integer entered! Please enter a valid integer :- ");
+            //     continue;
+            // }
+
+            for (int l1 = 0; l1 < l; l1++) {
+                if (arr[l1] == arr[l]) {
+                    dup = 1;
+                }
+            }
+
+            if (dup == 1) {
+                printf("\n%d is a duplicate entry ! \nProgram stopped", arr[l]);
+                break;
+            }
+
+            index++;
+        }
+
+        int sum = 0;
+
+        for (int l = 0; l < index; l++) {
+            sum = sum + arr[l];
+        }
+
+        printf("\n\nSum of all unique entries/integers = %d", sum);
+
+        return 0;
+    }
