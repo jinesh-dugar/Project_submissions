@@ -101,3 +101,80 @@
 
 //     return 0;
 //     }
+
+
+
+/*Write a general-purpose function to convert any given year into its Roman equivalent. Use these Roman equivalents for numbers: 
+1 – I, 5 – V, 10 – X, 50 – L, 100 – C, 500 – D, 1000 – M.*/
+
+/*Constraint of 4, 9, 40, 90, 400 and 900 printing remains*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+//         int year;
+
+//         printf("Enter any year : ");
+//         scanf("%d", &year);
+
+//         // int m = year / 1000;
+//         // int d = (year % 1000) / 500;
+//         // int c = (year % 500) / 100;
+//         // int l = (year % 100) / 50;
+//         // int x = (year % 50) / 10;
+//         // int v = (year % 10) / 5;
+//         // int i = (year % 5);
+
+//         int A = year / 1000;
+//         int B = (year % 1000) / 500;
+//         int C = (year % 500) / 100;
+//         int D = (year % 100) / 50;
+//         int E = (year % 50) / 10;
+//         int F = (year % 10) / 5;
+//         int G = (year % 5);
+
+//         int x;
+//         char pr;
+
+//         for (int ol = 1; ol <= 7; ol++) {
+//                 switch (ol) {
+//                     case 1:
+//                         x = A;
+//                         pr = 'M';
+//                     break;
+//                     case 2:
+//                         x = B;
+//                         pr = 'D';
+//                     break;
+//                     case 3:
+//                         x = C;
+//                         pr = 'C';
+//                     break;
+//                     case 4:
+//                         x = D;
+//                         pr = 'L';
+//                     break;
+//                     case 5:
+//                         x = E;
+//                         pr = 'X';
+//                     break;
+//                     case 6:
+//                         x = F;
+//                         pr = 'V';
+//                     break;
+//                     case 7:
+//                         x = G;
+//                         pr = 'I';
+//                     break;
+//                 } 
+            
+//             for (int il = 1; il <= x; il ++) {
+//                     printf("%c", pr);
+//             }
+
+//         }
+
+//         return 0;
+//     }
