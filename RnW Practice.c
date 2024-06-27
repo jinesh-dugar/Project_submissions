@@ -1017,7 +1017,7 @@ to find out what is the day on 1st January of this year.*/
 // #include<stdio.h>
 
 //     int main () {
-//         int n, prime[10000], index = 0, pfactor[10000], index2 = 0;
+//         int n, prime[10000], index = 0, pfactor[10000], index2 = 0, x = 1;
 
 //         printf("Enter any positive integer : ");
 //         scanf("%d", &n);
@@ -1027,40 +1027,59 @@ to find out what is the day on 1st January of this year.*/
 //             scanf("%d", &n);
 //         }
 
-//         int dup_n = n;
-
-//         for (int i = 2; i <= n; i++) {
-//             int primechk = 1;
-//             for (int l = 2; l < i/2; l++) {
-//                 if (i % l == 0) {
-//                     primechk = 0;
-//                     break;
+//         for(int a = 2; a <= n/2; a++) {
+                
+//                 if (n % a == 0) {
+//                    x = 1;
+//                    break;
 //                 }
-//             }
-//             if (primechk == 1) {
-//                 prime[index] = i;
-//                 index++;
-//             }
+
+//                 else {
+//                    x = 0;
+//                 }
+
 //         }
 
-//         // for(int l = 0; l < index; l++) {
-//         //     printf("%d ", prime[l]);
-//         // }
-
-//         for (int l = 0; l < index; l++) {
-//             pri :
-//             if (n % prime[l] == 0) {
-//                 n = n/prime[l];
-//                 pfactor[index2] = prime[l];
-//                 index2++;
-//                 goto pri;
-//             }
+//         if (x == 0) {
+//                 printf("\n%d itself is a prime number.\nThus, it has only one prime factor, which is %d itself", n, n);
 //         }
 
-//         printf("\nPrime factors of %d are : ", dup_n);
+//         else {
+//                 int dup_n = n;
 
-//         for (int o = 0; o < index2; o++) {
-//             printf("%d ", pfactor[o]);
+//                 for (int i = 2; i <= n; i++) {
+//                 int primechk = 1;
+//                 for (int l = 2; l < i/2; l++) {
+//                         if (i % l == 0) {
+//                         primechk = 0;
+//                         break;
+//                         }
+//                 }
+//                 if (primechk == 1) {
+//                         prime[index] = i;
+//                         index++;
+//                 }
+//                 }
+
+//                 // for(int l = 0; l < index; l++) {
+//                 //     printf("%d ", prime[l]);
+//                 // }
+
+//                 for (int l = 0; l < index; l++) {
+//                 pri :
+//                 if (n % prime[l] == 0) {
+//                         n = n/prime[l];
+//                         pfactor[index2] = prime[l];
+//                         index2++;
+//                         goto pri;
+//                 }
+//                 }
+
+//                 printf("\nPrime factors of %d are : ", dup_n);
+
+//                 for (int o = 0; o < index2; o++) {
+//                 printf("%d ", pfactor[o]);
+//                 }
 //         }
 
 //         return 0;
