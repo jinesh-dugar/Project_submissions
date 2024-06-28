@@ -1086,7 +1086,7 @@ to find out what is the day on 1st January of this year.*/
 
 
 
-/*A positive integer is entered through the keyboard. Write a function to obtain the prime factors of this number.*/
+/*A positive integer is entered through the keyboard. Write a function to obtain the prime factors of this number.*/   /*Dated 27th June, 2024*/
 
 
 
