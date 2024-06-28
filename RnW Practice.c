@@ -1010,6 +1010,82 @@ to find out what is the day on 1st January of this year.*/
 
 
 
+/*Prime numbers between 2 numbers*/   /*Dated 28th June, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+//         int n, n1, prime[10000], index = 0, pfactor[10000], index2 = 0, x = 1;
+
+//         start :
+
+//         printf("\nEnter any positive integer as starting point : ");
+//         scanf("%d", &n);
+//         printf("\nEnter any positive integer as ending point : ");
+//         scanf("%d", &n1);
+
+//         while (n < 0 || n1 < 0) {
+//             printf("\nInvalid entry. Retry entering 2 positive integers as starting and ending points : \n");
+//             scanf("%d %d", &n, &n1);
+//         }
+
+//         if (n == n1) {
+//                 printf("\nStarting and Ending points are same. \nRetry entering starting and ending points with positive and unequal numbers.\n");
+//                 goto start;
+//         }
+
+//         if (n > n1) {
+//             int cnf;
+//             printf("\nStarting point is greater than the ending point.\nDo you want me to replace the starting and ending points or you want to re-enter the entries. Press 1 for replacing or 0 for re-entering : ");
+//             scanf("%d", &cnf);
+
+//             switchstart:
+
+//             switch (cnf) {
+//                 case 1:
+//                     n = n + n1;
+//                     n1 = n - n1;
+//                     n = n - n1;
+//                     break;
+//                 case 0:
+//                     goto start;
+//                 default:
+//                     printf("\nInvalid input. Do you want me to replace starting points or re-enter the entries. Press 1 for replacing or 0 for re-entering : ");
+//                     scanf("%d", &cnf);
+//                     goto switchstart;
+//             }
+//         }
+
+//         for (int i = n; i <= n1; i++) {
+//             int primechk = 1;
+//             for (int l = 2; l < i/2; l++) {
+//                     if (i % l == 0) {
+//                         primechk = 0;
+//                         break;
+//                     }
+//             }
+//             if (primechk == 1) {
+//                     prime[index] = i;
+//                     index++;
+//             }
+//         }
+
+//         printf("\nPrime numbers from %d to %d are : ",n , n1);
+
+//         for(int l = 0; l < index; l++) {
+//                 printf("%d ", prime[l]);
+//         }
+
+//         printf("\n\nTotal number of prime numbers from %d to %d are %d", n, n1, index);
+
+//     return 0;
+
+// }
+
+
+
 /*A positive integer is entered through the keyboard. Write a function to obtain the prime factors of this number.*/
 
 
