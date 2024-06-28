@@ -48,32 +48,6 @@
 
 
 
-/* Program for Leap Year */
-
-
-
-// #include<stdio.h>
-    
-//     int main () {
-
-//         int year;
-//             printf("Enter a year to check whether it was/is/will be a leap year or not. Enter the year:- ");
-//             scanf("%d", &year);
-
-//     if( year%400==0 || (year%4==0 && year%100!=0)) {
-//         printf("Entered Year was/is/will be a leap year");
-//     }
-
-//     else{
-//         printf("Entered Year was/is/will not be a leap year");
-//     }
-
-//     return 0;
-
-//     }
-
-
-
 /*Program for entry into a park*/
 
 
@@ -104,6 +78,32 @@
 
 
 
+/* Program for Leap Year */
+
+
+
+// #include<stdio.h>
+    
+//     int main () {
+
+//         int year;
+//             printf("Enter a year to check whether it was/is/will be a leap year or not. Enter the year:- ");
+//             scanf("%d", &year);
+
+//     if( year%400==0 || (year%4==0 && year%100!=0)) {
+//         printf("Entered Year was/is/will be a leap year");
+//     }
+
+//     else{
+//         printf("Entered Year was/is/will not be a leap year");
+//     }
+
+//     return 0;
+
+//     }
+
+
+
 /*Program for sum of numbers in a given range (Starting and Ending number included)*/
 
 
@@ -127,13 +127,12 @@
 //     } 
 
 
+
 /*Program for finding greatest number among three numbers*/
 
 
 
-/*Possible cases :- 1) All three same
-                    2) Two same, third distinct
-                    3) All three different*/
+/*Possible cases :- 1) All three same;     2) Two same, third distinct;        3) All three different*/
 
 
 // #include<stdio.h>
@@ -195,6 +194,182 @@
 
 
 
+/*To find whether a given entered number is prime or not*/
+
+
+
+// #include<stdio.h>
+
+// int main () {
+//     int i, a = 2, x = 0;
+//     printf("Enter a number to find whether it is prime or not :- \n");
+//     scanf("%d", &i);
+
+//     for(a; a < i; a++) {
+//         if (i % a == 0) {
+//             x = 1;
+//             break;
+//         }
+//         else {
+//             x = 0;
+//         }
+
+//     }
+
+//     (x == 0) ? (printf("Prime Number")) : printf("Not a prime Number");
+
+//     return 0;
+// }
+
+
+
+/*Write a program in C language to print the factorial of a number*/
+
+
+
+// #include <stdio.h>
+
+// int main () {
+//         int number, fac, l;
+//         printf("Enter a positive number to get its factorial :- ");
+//         scanf("%d", &number);
+
+//         if(number <= 0) {
+//                 if (number == 0) {
+//                         printf("Great question, that's a tricky one. You'd expect the answer to be 0, but it's actually one. Yeah, you heard that right. 0! does equal 1\n");
+//                 }
+//                 else {
+//                         printf("Factorial of a negative number is not defined within the domain of mathematics. Please try again with a valid natural number input\n");
+//                         main ();
+//                 }
+//         } 
+
+//         fac = 1;
+//         for (l = 1; l <= number; l++) {
+//                 fac = fac*l;
+//         }
+        
+//         printf("Factorial of %d = %d", number, fac);
+        
+//         return 0;
+        
+// }
+
+
+
+/*Printing Fibonacci Series upto nth term with user input of n*/  /*Dated 18th June, 2024*/
+
+
+
+// #include <stdio.h>
+
+//     int main () {
+//         int last2 = 0, last1 = 1, mlc, current, noft, term_cnf;
+
+//         printf("Enter the number of terms upto which you want Fibonacci series to be printed :- ");
+//         scanf("%d", &noft);
+        
+//         printf("If you want starting 0 and 1 to be included in counting of terms in total number of terms, press 1 or else, press 0 :- ");
+//         scanf("%d", &term_cnf);
+        
+//         (term_cnf == 1) ? (noft = noft-2) : (noft = noft);
+
+//         printf("0 1 ");
+
+//         for (mlc = 1; mlc <= (noft); mlc++) {
+//             current = last2 + last1;
+//             printf("%d ", current);
+//             last2 = last1;
+//             last1 = current;
+//         }
+
+//         return 0;
+//     }
+
+
+
+/*Printing nth term of Fibonacci sequence taking n as user input*/  /*Dated 18th June, 2024*/
+
+
+
+// #include <stdio.h>
+
+//     int main () {
+//         int last2 = 0, last1 = 1, mlc, current, t_no, term_cnf, dup_t_no;
+
+//         printf("Enter the term of Fibbonacci series you want to be printed :- ");
+//         scanf("%d", &t_no);
+        
+//         dup_t_no = t_no;
+        
+//         printf("If you want me to consider 0 and 1 as the first 2 terms, press 1 or else, to consider 1 and 2 as the first 2 terms press 0 :- ");
+//         scanf("%d", &term_cnf);
+        
+//         (term_cnf == 1) ? (t_no = t_no-2) : (t_no = t_no);
+
+//         for (mlc = 1; mlc <= t_no; mlc++) {
+//             current = last2 + last1;
+//             last2 = last1;
+//             last1 = current;
+//         }
+        
+//         printf("%dth term of Fibbonacci sequence = %d", dup_t_no, current);
+
+//         return 0;
+//     }
+
+
+
+/*Printing table of n*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+
+//         int n;
+
+//         printf("\nEnter any number to get its table printed : ");
+//         scanf("%d", &n);
+
+//         printf("\n");
+
+//         for(int i = 1; i <= 10; i++) {
+            
+//             printf("%d x %d = %d\n", n, i, i*n);
+
+//         }
+
+//     return 0;
+
+// }
+
+
+
+/*Sum of first n natural numbers*/
+
+
+
+// #include<stdio.h>
+
+// int main () {
+    
+//     int result = 0, i = 1, n;
+
+//     printf("Enter a number : ");
+//     scanf("%d", &n);
+
+//     while(i <= n) {
+//         result += i;
+//         i++;
+//     }
+
+//     printf("Sum of natural numbers upto %d = %d", n, result);
+// }
+
+
+
 /*: In a company an employee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 10% of basic salary and DA = 90%
 of basic salary. If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. If the employee's
 salary is input through the keyboard write a program to find his gross salary.*/
@@ -214,10 +389,8 @@ salary is input through the keyboard write a program to find his gross salary.*/
 
 
 
-/*A company insures its drivers in the following cases:
- If the driver is married.
- If the driver is unmarried, male & above 30 years of age.
- If the driver is unmarried, female & above 25 years of age.*/
+/*A company insures its drivers in the following cases: 1) If the driver is married. 2) If the driver is unmarried, male & above 30 years of age.
+3) If the driver is unmarried, female & above 25 years of age.*/
 
 
 
@@ -249,14 +422,20 @@ made profit or incurred loss. Also determine how much profit he made or loss he 
 // #include<stdio.h>
 
 //     int main() {
+
 //         float cost_price, selling_price, rate, x;
+
 //         printf("Enter cost price:- \nEnter selling price:- ");
 //         scanf("%f %f", &cost_price, &selling_price);
+
 //         rate=selling_price - cost_price;
 //         x=0;
+
 //         (rate>0)?(x=1, printf("Profit is incurred\n")):(x=0, printf("Loss is incurred\n"));
 //         (x==1)?(printf("Profit = %.2f", rate)):(printf("Loss = %.2f", -rate));
+
 //     return 0;
+
 //     }
 
     /*Learnings:-   1) Keep in mind the datatypes and their coressponding format specifiers to avoid running into error
@@ -267,41 +446,7 @@ made profit or incurred loss. Also determine how much profit he made or loss he 
 
 
 
-/*To find whether a given entered number is prime or not*/
-
-
-
-// #include<stdio.h>
-
-// int main () {
-//     int i, a = 2, x = 0;
-//     printf("Enter a number to find whether it is prime or not :- \n");
-//     scanf("%d", &i);
-
-//     for(a; a < i; a++) {
-//         if (i % a == 0) {
-//             x = 1;
-//             break;
-//         }
-//         else {
-//             x = 0;
-//         }
-
-//     }
-
-//     (x == 0) ? (printf("Prime Number")) : printf("Not a prime Number");
-
-//     return 0;
-// }
-
-
-
-/*Prime Numbers within a given range of numbers*/
-
-
-
-/*According to the Gregorian calendar, it was Monday on the date
-01/01/01. If any year is input through the keyboard write a program
+/*According to the Gregorian calendar, it was Monday on the date 01/01/01. If any year is input through the keyboard write a program
 to find out what is the day on 1st January of this year.*/
 
 
@@ -414,7 +559,7 @@ to find out what is the day on 1st January of this year.*/
 
 //     }
 
-/*Note :- We can't put %.xf in scanf's reference*/
+/*Note :- We can't put %.xf in scanf's reference, where x = any number*/
 
 
 
@@ -493,104 +638,8 @@ to find out what is the day on 1st January of this year.*/
 
 
 
-/*Write a program in C language to print the factorial of a number*/
-
-
-
-// #include <stdio.h>
-
-// int main () {
-//         int number, fac, l;
-//         printf("Enter a positive number to get its factorial :- ");
-//         scanf("%d", &number);
-
-//         if(number <= 0) {
-//                 if (number == 0) {
-//                         printf("Great question, that's a tricky one. You'd expect the answer to be 0, but it's actually one. Yeah, you heard that right. 0! does equal 1\n");
-//                 }
-//                 else {
-//                         printf("Factorial of a negative number is not defined within the domain of mathematics. Please try again with a valid natural number input\n");
-//                         main ();
-//                 }
-//         } 
-
-//         fac = 1;
-//         for (l = 1; l <= number; l++) {
-//                 fac = fac*l;
-//         }
-        
-//         printf("Factorial of %d = %d", number, fac);
-        
-//         return 0;
-        
-// }
-
-
-
-/*Printing Fibonacci Series upto nth term with user input of n*/  /*Dated 18th June, 2024*/
-
-
-
-// #include <stdio.h>
-
-//     int main () {
-//         int last2 = 0, last1 = 1, mlc, current, noft, term_cnf;
-
-//         printf("Enter the number of terms upto which you want Fibonacci series to be printed :- ");
-//         scanf("%d", &noft);
-        
-//         printf("If you want starting 0 and 1 to be included in counting of terms in total number of terms, press 1 or else, press 0 :- ");
-//         scanf("%d", &term_cnf);
-        
-//         (term_cnf == 1) ? (noft = noft-2) : (noft = noft);
-
-//         printf("0 1 ");
-
-//         for (mlc = 1; mlc <= (noft); mlc++) {
-//             current = last2 + last1;
-//             printf("%d ", current);
-//             last2 = last1;
-//             last1 = current;
-//         }
-
-//         return 0;
-//     }
-
-
-
-/*Printing nth term of Fibonacci sequence taking n as user input*/  /*Dated 18th June, 2024*/
-
-
-
-// #include <stdio.h>
-
-//     int main () {
-//         int last2 = 0, last1 = 1, mlc, current, t_no, term_cnf, dup_t_no;
-
-//         printf("Enter the term of Fibbonacci series you want to be printed :- ");
-//         scanf("%d", &t_no);
-        
-//         dup_t_no = t_no;
-        
-//         printf("If you want me to consider 0 and 1 as the first 2 terms, press 1 or else, to consider 1 and 2 as the first 2 terms press 0 :- ");
-//         scanf("%d", &term_cnf);
-        
-//         (term_cnf == 1) ? (t_no = t_no-2) : (t_no = t_no);
-
-//         for (mlc = 1; mlc <= t_no; mlc++) {
-//             current = last2 + last1;
-//             last2 = last1;
-//             last1 = current;
-//         }
-        
-//         printf("%dth term of Fibbonacci sequence = %d", dup_t_no, current);
-
-//         return 0;
-//     }
-
-
-
-// /*Printing table of 2*/
+/*Write a C program that prompts the user to input a series of integers until the user enters 0 using a while loop. 
+  Calculate and print the sum of all the positive integers entered*/
 
 
 
@@ -598,54 +647,13 @@ to find out what is the day on 1st January of this year.*/
 
 //     int main () {
 
-//         int i=1;
-
-//         for (i; i<=10;) {
-//             ++i;
-//             printf("2 x %d = %d\n", i, i*2);
-//         }
-
-//     return 0;
-
-// }
-
-
-
-// /*Sum of first 10 natural numbers*/
-
-
-
-// #include<stdio.h>
-
-// int main () {
-    
-//     int result = 0, i = 1;
-
-//     while(i<=10) {
-//         result += i;
-//         i++;
-//     }
-
-//     printf("Sum of numbers = %d", result);
-// }
-
-
-
-// /*Write a C program that prompts the user to input a series of integers until the user stops entering 0 using a while loop. 
-// Calculate and print the sum of all the positive integers entered*/
-
-
-
-// #include<stdio.h>
-
-//     int main () {
 //         int i = 5, a = 0;
 
-//         while (i!=0) {
+//         while (i != 0) {
 //             printf("Enter a number :-");
 //             scanf("%d", &i);
 
-//             if(i>0) {
+//             if(i > 0) {
 //                 a = a + i;
 //             }
 //         }
@@ -657,14 +665,16 @@ to find out what is the day on 1st January of this year.*/
 
 
 
-// /*Write a C program that calculates the product of numbers from 1 to 5 using a while loop*/
+/*Write a C program that calculates the product of numbers from 1 to 5 using a while loop*/
 
 
 
 // #include<stdio.h>
 
 //     int main () {
+
 //         int a = 1, i = 1;
+
 //         while(a <= 5) {
 //             i = i * a;
 //             a++;
@@ -702,24 +712,29 @@ to find out what is the day on 1st January of this year.*/
 
 
 
-// /*Write a C program that prompts the user to enter a positive integer.
-// Use a while loop to print the multiplication table for that number up to 10*/
+/*Write a C program that prompts the user to enter a positive integer. Use a while loop to print the multiplication table for that number up to 10*/
 
 
 
 // #include<stdio.h>
 
 //     int main () {
+
 //         int i, a = 1;
+
 //         printf("Enter a positive number to get its table printed upto x10 :- ");
 //         scanf("%d", &i);
+
 //         if(i>=0) {
 //             (printf("You've entered a valid number. Here's your output.\n"));
 //         }
+
 //         else { 
 //             while(i<0) {
+
 //             printf("Invalid input, please enter a positive number.\n");
 //             scanf("%d", &i);
+
 //             }
 //             printf("%d is a valid input. Here's your output.\n", i);
 //         }
@@ -747,7 +762,7 @@ to find out what is the day on 1st January of this year.*/
 //         printf("Enter ending number :- ");
 //         scanf("%d", &b);
 
-//         printf("List of odd numbers between %d and %d : -", a, b);
+//         printf("List of odd numbers between %d and %d : ", a, b);
 
 //         if(a%2 == 0) {
 //             c = a + 1;
