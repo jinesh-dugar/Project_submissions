@@ -13,13 +13,4 @@
 /*Replace all 0’s with 1 in a given integer*/
 
 
-/*Can a number be expressed as a sum of two prime numbers*/
-
-
 /*Array - Insertion of element*/
-
-
-/*Array - Deletion of element*/
-
-
-/*Array - Sorting of array*/
