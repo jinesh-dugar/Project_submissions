@@ -1209,7 +1209,6 @@ to find out what is the day on 1st January of this year.*/
 
 
 
-
 // #include<stdio.h>
 
 //      int main () {
@@ -1287,4 +1286,72 @@ to find out what is the day on 1st January of this year.*/
 
 //         return 0;
         
-//      }        
+//      }
+
+
+
+/*Armstrong number checking*/   /*Dated 1st July, 2024*/
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+
+//     int main () {
+//         int n, no_digits = 0;
+
+//         printf("Enter any natural number to know whether it is an armstrong number or not : ");
+//         scanf("%d", &n);
+
+//         while (n <= 0) {
+//             printf("Not a valid entry!\nPlease retry entering a natural number : ");
+//             scanf("%d", &n);
+//         }
+
+//         int dup_n = n;
+//         int dup2_n = n;
+
+//         int x;
+
+//         while (n >= 1) {
+//             n = n/10;
+//             x = n;
+//             no_digits++;            
+//         }
+
+//         // printf("%d", no_digits);
+
+//         int sum = 0;
+
+//         for(int l = 1; l <= no_digits; l++) {
+
+//             int dup_n = dup2_n;
+
+//             for (int l1 = 1; l1 < l; l1++) {
+//                 dup_n = dup_n/10;
+//             }
+
+//             dup_n = dup_n % 10;
+
+//             // double no = dup_n;
+
+//             // double digit = no_digits;
+
+//             double curr_n = pow(dup_n, no_digits);
+
+//             // printf("%.0lf\n", curr_n);
+
+//             sum = sum + curr_n;
+//         }
+
+//         // printf("%d", sum);
+
+//         if(sum == dup2_n) {
+//             printf("\nEntered number is an armstrong number.");
+//         }
+//         else {
+//             printf("\nEntered number is not an armstrong number.");
+//         }
+
+//         return 0;
+//     }
