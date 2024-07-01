@@ -78,6 +78,33 @@
 
 
 
+/*Math pre-processor directory functions*/   /*28th June, 2024*/
+
+
+
+// #include<stdio.h>
+// #include<math.h>
+
+//     int main () {
+
+//         int x1 = ceil(3.6);
+//         int x2 = floor(3.6);
+//         int x3 = pow(2.00, 4.00);
+//         int x4 = abs(-19);
+//         float x5 = sqrt(25.986);
+
+//         printf("%d\n", x1);
+//         printf("%d\n", x2);
+//         printf("%d\n", x3);
+//         printf("%d\n", x4);
+//         printf("%f", x5);
+
+//         return 0;
+
+//     }
+
+
+
 /* Program for Leap Year */
 
 
@@ -1175,3 +1202,89 @@ to find out what is the day on 1st January of this year.*/
 
 //         return 0;
 //     }
+
+
+
+/*Can a number be expressed as a sum of two prime numbers*/   /*Dated 28th June, 2024*/
+
+
+
+
+// #include<stdio.h>
+
+//      int main () {
+
+//         int n, ans = 0, no_ways = 0;
+
+//         printf("\nEnter any natural number to know whether it can be expressed as a sum of two prime numbers or not : ");
+//         scanf("%d", &n);
+
+//         int prime[n], index = 0;
+
+//         while(n <= 0) {
+//                 printf("\nThe entered number is not a valid natural number. Please retry entering a natural number : ");
+//                 scanf("%d", &n);
+//         }
+
+//         for (int l = 2; l < n; l++) {
+                
+//                 int primechk = 1;
+
+//                 for (int i = 2; i <= l/2; i++) {
+//                         if (l % i == 0) {
+//                                 primechk = 0;
+//                                 break;
+//                         }
+//                 }
+
+//                 if (primechk == 1) {
+//                         prime[index] = l;
+//                         index++;
+//                 }
+//         }
+
+//         int ansindex = 0, ansno = 0;
+
+//         for(int l = 0; l < index; l++) {
+
+//                 int primechk2 = 1;
+
+//                 int new_n = n - prime[l];
+                
+//                 if(new_n == 1) {
+//                         primechk2 = 0;
+//                         continue;
+//                 }
+                
+//                 for (int i = 2; i <= new_n/2; i++) {
+                        
+//                         if(new_n % i == 0) {
+//                                 primechk2 = 0;
+//                                 break;
+//                         }
+
+//                 }
+
+//                 if (primechk2 == 1) {
+//                                 ans = 1;
+//                                 ansindex = l;
+//                                 ansno = new_n;
+//                                 no_ways++;
+//                 }
+//         }
+
+//         if (ans == 0) {
+//                 printf("\n%d cannot be expressed as a sum of 2 prime numbers.", n);
+//         }
+//         else if (ans == 1) {
+//                 printf("\n%d can be expressed as a sum of 2 prime numbers.\n\nOne of the possible ways is %d + %d = %d", n, prime[ansindex], ansno, n);
+//         }
+//         else {
+//                 printf("\nWe've ran into an unexpected error. Please re-start the program. Thank you for understanding.");
+//         }
+        
+//         printf("\n%d", no_ways);
+
+//         return 0;
+        
+//      }        
