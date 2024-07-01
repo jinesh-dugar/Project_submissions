@@ -1355,3 +1355,118 @@ to find out what is the day on 1st January of this year.*/
 
 //         return 0;
 //     }
+
+
+
+/*Armstrong number in a given range*/   /*Dated 1st July, 2024*/
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+
+//     int main () {
+
+//         int n, n1, n2;
+
+//         start:
+
+//         printf("\nPlease enter numbers lesser than or equal to 519252 if you would like the code to run smoothly and properly.\n");
+        
+//         printf("\nEnter a natural number as starting point : ");
+//         scanf("%d", &n1);
+
+//         while (n1 <= 0) {
+//             printf("Not a valid entry!\nPlease retry entering a natural number as starting point : ");
+//             scanf("%d", &n1);
+//         }
+
+//         printf("\nEnter a natural number as ending point : ");
+//         scanf("%d", &n2);
+
+//         while (n2 <= 0) {
+//             printf("\nNot a valid entry!\nPlease retry entering a natural number as ending point : ");
+//             scanf("%d", &n2);
+//         }
+
+//         if(n2 < n1) {
+
+//             int cnf;
+//             printf("\nStarting point is greater than the ending point.\nPress 1 if you want to replace starting and ending points or 0 if you want to modify your entries : ");
+//             scanf("%d", &cnf);
+
+//             while (cnf != 0 && cnf != 1) {
+//                 printf("\nNot a valid entry!\nPress 1 if you want to replace starting and ending points or 0 if you want to modify your entries : ");
+//                 scanf("%d", &cnf);
+//             }
+
+//             if (cnf == 1) {
+//                 n1 = n1 + n2;
+//                 n2 = n1 - n2;
+//                 n1 = n1 - n2;
+//             }
+
+//             if (cnf == 0)  {
+//                 goto start;
+//             }           
+//         }
+
+//         else if(n1 == n2) {
+//             printf("\nStarting and ending points are the same\nPlease retry entering different numbers as starting and ending points\n");
+//             goto start;
+//         }
+
+//         int arm[n2 - n1], index = 0;        
+
+//         for (int l = n1; l <= n2; l++) {
+
+//             int no_digits = 0;   /*Huge mistake done by declaring this no_digits = 0 out of this loop, was not working at all after the first loop run*/
+
+//             // printf("I came by!\n");
+
+//             n = l;
+
+//             int dup_n = l;
+//             int dup2_n = l;
+
+//             while (n >= 1) {
+//                 // printf("I came by 2!\n");
+//                 n = n/10;
+//                 no_digits++;            
+//             }
+
+//             int sum = 0;
+
+//             for(int l2 = 1; l2 <= no_digits; l2++) {
+
+//                 dup_n = dup2_n;
+//                 // printf("I came by 3!\n");
+
+//                 for (int l1 = 1; l1 < l2; l1++) {
+//                     dup_n = dup_n/10;
+//                     // printf("I came by 4!\n");
+//                 }
+
+//                 dup_n = dup_n % 10;
+
+//                 double curr_n = pow(dup_n, no_digits);
+
+//                 sum = sum + curr_n;
+//             }
+
+//             if(sum == dup2_n) {
+//                 // printf("I came by 5!\n");
+//                 arm[index] = l;
+//                 index++;
+//             }
+//         }
+
+//         printf("\nThere are a total of %d Armstrong numbers between %d and %d.\nThey are listed as follows : ", index, n1, n2);
+
+//         for(int ol = 0; ol < index; ol++) {
+//             // printf("I came by 6!\n");
+//             printf("%d ", arm[ol]);
+//         }
+
+//         return 0;
+//     }
