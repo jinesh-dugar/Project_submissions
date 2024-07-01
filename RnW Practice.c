@@ -1470,3 +1470,65 @@ to find out what is the day on 1st January of this year.*/
 
 //         return 0;
 //     }
+
+
+
+/*Strong Number or not*/   /*Dated 1st July, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int main() {
+//         int n, no_digits = 0;
+
+//         printf("Enter ay natural number to know whether it is a Strong number or not : ");
+//         scanf("%d", &n);
+
+//         int dup_n = n;
+
+//         while (n >= 1) {
+//             n = n/10;
+//             no_digits++;
+//         }
+
+//         // printf("%d\n", no_digits);
+
+//         int sum = 0;
+
+//         for (int l = 1; l <= no_digits; l++) {
+            
+//             n = dup_n;
+
+//             if (l == 1) {
+//                 n = n % 10;
+//                 // printf("%d\n", n);
+//             }
+
+//             else {
+//                 for (int l2 = 1; l2 < l; l2++) {
+//                     n = n / 10;
+//                     // printf("%d\n", n % 10);
+//                 }
+//                 n = n % 10;
+//             }
+
+//             int p = 1;
+
+//             for(int l3 = 1; l3 <= n; l3++) {
+//                 p = p*l3;
+//             }
+
+//             sum = sum + p;
+//         }
+
+//         if (sum == dup_n) {
+//             printf("\n%d is a Strong number.", dup_n);
+//         }
+
+//         else{
+//             printf("\n%d is not a Strong number.", dup_n);
+//         }
+
+//         return 0;
+//     }
