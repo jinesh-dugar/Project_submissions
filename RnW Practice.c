@@ -1532,3 +1532,93 @@ to find out what is the day on 1st January of this year.*/
 
 //         return 0;
 //     }
+
+
+
+/*Number - reverser*/   /*Dated 3rd and 4th July, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int no_reverse(int, int);
+
+//     int main() {
+//         int n;
+
+//         int rev = 0;
+
+//         printf("Enter a number to find its reverse: ");
+//         scanf("%d", &n);
+
+//         // while (n < 10000 || n > 99999) {
+//         //     printf("Entered number is not a 5-digit number.\nPlease retry entering a valid 5-digit number : ");
+//         //     scanf("%d", &n);
+//         // }
+
+//         int reverse = no_reverse(n, rev);
+
+//         printf("Reverse of entered number = %d", reverse);
+
+//         return 0;
+//     }
+
+//     int no_reverse(int no, int in_rev) {
+
+//         int rev_n = in_rev;
+
+//         if(no < 10) {
+//             return rev_n + no;
+//         }
+
+//         rev_n = (rev_n + no%10)*10;
+//         no = no/10;
+
+//         return no_reverse(no, rev_n);
+
+//     }
+
+
+
+/*Checking of divisibilty by 3 and 5*/   /*Dated 1st July, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int div_3_5 (int n) {
+
+//         // int div_3 = 0, div_5 = 0;
+
+//         if (n % 15 == 0) {
+//             // div_3 = 1;
+//             // div_5 = 1;
+//             printf("The given number is divisible by 3 and 5 both");
+//         }
+
+//         else if (n % 3 == 0) {
+//             // div_3 = 1;
+//             printf("The given number is divisible by 3 only");
+//         }
+
+//         else if (n % 3 == 0) {
+//             // div_5 = 1;
+//             printf("The given number is divisible by 3 only");
+//         }
+
+//         else {
+//             printf("The given number is neither divisible by 3, nor 5");
+//         }        
+//     }
+    
+
+//     int main () {
+//         int n;
+
+//         printf("Enter a number to know its divisibilty with 3 and 5 : ");
+//         scanf("%d", &n);
+
+//         div_3_5(n);
+
+//         return 0;
+//     }
