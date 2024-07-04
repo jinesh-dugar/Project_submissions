@@ -131,3 +131,31 @@
 //         return 0;
 
 //     }
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+//         int z = 5;
+//         printf("%d", sizeof(z));
+
+//         return 0;
+//     }
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+//         int a[] = {11, 22, 33, 44, 55};
+//         int sum = 0, *p;
+
+//             for (p = &a[0]; p <= &a[4]; p++) {
+//                 sum = sum + *p;
+//             }
+
+//         printf("%d", sum);
+
+//         return 0;
+//     }

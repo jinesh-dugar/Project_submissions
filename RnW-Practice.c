@@ -1535,7 +1535,36 @@ to find out what is the day on 1st January of this year.*/
 
 
 
-/*Number - reverser*/   /*Dated 3rd and 4th July, 2024*/
+/*Factorial using Recursion*/   /*Dated 2nd July, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int factorial (int n) {
+//         if (n == 1) {
+//             return 1;
+//         }
+//         else {
+//             return n * factorial (n-1);
+//         }
+//     }
+
+//     int main () {
+        
+//         int n;
+        
+//         printf("Enter a number to find its factorial : ");
+//         scanf("%d", &n);
+        
+//         printf("Factorial of %d is %d", n, factorial (n));
+        
+//         return 0;
+//     }
+
+
+
+/*Number - reverser with recursion*/   /*Dated 3rd and 4th July, 2024*/
 
 
 
@@ -1577,6 +1606,35 @@ to find out what is the day on 1st January of this year.*/
 //         return no_reverse(no, rev_n);
 
 //     }
+
+
+
+/*Number - reverser without recursion*/   /*Dated 4th July, 2024*/
+
+
+
+// #include<stdio.h>
+
+//     int main () {
+//         int n, no_digits = 0, rev_n = 0;
+
+//         printf("Enter a number to find its reverse : ");
+//         scanf("%d", &n);
+
+//         int dup_n = n;
+
+//         while (n >= 1) {
+//             rev_n = (rev_n + (n % 10))*10;
+//             n = n/10;
+
+//             // n = n/10;
+//             // no_digits++;                            
+//         }
+
+//         printf("Reverse of %d = %d", dup_n, rev_n/10);
+
+//         return 0;
+//     }    
 
 
 
