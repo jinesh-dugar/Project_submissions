@@ -581,7 +581,7 @@ to find out what is the day on 1st January of this year.*/
 //         scanf("%f", &temp_cel);
 //         temp_far = (temp_cel*9)/5+32;
 
-//         printf("The corresponding Temperature for %.2f Celsius will be %.2f Fahrenheit", temp_cel, temp_far);
+//         printf("The temperature corresponding to %.2f Celsius is %.2f Fahrenheit", temp_cel, temp_far);
 //         return 0;
 
 //     }

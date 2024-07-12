@@ -16,7 +16,7 @@ Make sure that the program is endless until a certain letter is pressed.*/
             scanf("%d", &op);
 
             while (op < 0 || op > 5) {
-                printf("\nInvalid input received. Please try again entering a integer from 0 to 5 as a valid input.\n\nPress 1 for doing Addition Operation of 2 numbers\nPress 2 for doing Subtraction Operation upon 2 numbers\nPress 3 for doing Division Operation upon 2 numbers\nPress 4 for doing Multiplication Operation of 2 numbers\nPress 5 for doing modulo operation upon 2 numbers\nOr press 0 for exiting the calculator\n");
+                printf("\n\"Invalid input received. Please try again entering a integer from 0 to 5 as a valid input.\"\n\nPress 1 for doing Addition Operation of 2 numbers\nPress 2 for doing Subtraction Operation upon 2 numbers\nPress 3 for doing Division Operation upon 2 numbers\nPress 4 for doing Multiplication Operation of 2 numbers\nPress 5 for doing modulo operation upon 2 numbers\nOr press 0 for exiting the calculator\n");
                 scanf("%d", &op);
             }
 
@@ -61,7 +61,7 @@ Make sure that the program is endless until a certain letter is pressed.*/
         }
         while(op != 0);
 
-        printf("\nThank you for using our calculator! It was a pleasure to assist you in your mathematical queries");
+        printf("\n\"Thank you for using our calculator! It was a pleasure to assist you in your mathematical queries\"");
 
         return 0;
     }
