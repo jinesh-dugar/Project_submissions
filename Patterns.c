@@ -64,7 +64,7 @@
 
 //         printf("\n");
 
-//         for (r = 1; r<=x; r++) {
+//         for (r = 1; r <= x; r++) {
 //             for (c = 1; c<=r; c++) {
 //                 printf("%d ", c);
 //             }
